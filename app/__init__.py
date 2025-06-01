@@ -85,7 +85,7 @@ def create_app():
                 db.session.add(new_user)
                 app.logger.info(f"User {user_data['email']} created with role {user_data['role_name']}.")
 
-        db.session.commit()  # 🔥 You missed this line before
+        db.session.commit()  
 
 
      
